@@ -1,0 +1,16 @@
+ASSIGNMENT 8.1:
+================
+In dataset there is no column name . 
+
+Multiple Linear Regression in R:
+
+lm(response~predictor1+predictor2+...+predictorN)
+summary(lm(response~predictor1+predictor2+...+predictorN))
+
+for step AIC
+==============
+Akaike’sInformation Criterion (AIC)AIC in RAkaike’s Information Criterion in R to determine predictors:
+
+step(lm(response~predictor1+predictor2+predictor3), direction="backward")
+step(lm(response~predictor1+predictor2+predictor3), direction="forward")
+step(lm(response~predictor1+predictor2+predictor3), direction="both")
